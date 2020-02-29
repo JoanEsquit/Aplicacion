@@ -1,0 +1,21 @@
+<form action="action_page.php" method="post">
+  <div class="imgcontainer">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" class="MaxApp" placeholder="username" ng-model="user.email">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" class="MaxApp" placeholder="password" ng-model="user.password">
+
+     <input type="button" value="Registrar" class="btn float-right login_btn" ng-click="obtener(user)">
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+    <button type="button" class="cancelbtn" ui-sref="login">Login</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
