@@ -38,7 +38,35 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('DashCtrl', function($scope) {
+.controller('DashCtrl', function($scope,$rootScope) {
+  $rootScope.Categoria = [
+  {
+    nombreCategoria: "TV y Video",
+    imagen:"img/tv.jpg"
+
+  },
+  {
+    nombreCategoria: "Celulares",
+    imagen:"img/telefono.jpg"
+  },
+  {
+    nombreCategoria: "Computacion y tablets",
+    imagen: "img/computadora.jpg"
+  },
+  {
+    nombreCategoria: "Camaras y Drones",
+    imagen: "img/camara.jpg"
+  },
+  {
+    nombreCategoria: "Audifonos y Bocinas",
+    imagen: "img/audifonos.jpg"
+  },
+  {
+    nombreCategoria: "Electrodemesticos",
+    imagen: "img/batidora.jpg"
+  }
+
+  ]
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {
@@ -64,4 +92,5 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+
 });
